@@ -3,9 +3,11 @@
 Odoo 20 Community addon that adds an optional Saudi National ID field to
 `res.partner` and displays it on the standard contact form.
 
-The field accepts a ten-digit value beginning with `1` or `2`, covering Saudi
-national IDs and residency IDs. It does not enforce uniqueness because the
-same person may be represented in multiple companies or databases.
+The field accepts any non-empty text value, covering Saudi national IDs,
+residency IDs, commercial registration numbers, and other identity references.
+Leading and trailing spaces are removed. It does not enforce uniqueness because
+the same person or reference may be represented in multiple companies or
+databases.
 
 ## Installation
 

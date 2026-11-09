@@ -21,13 +21,8 @@ msgstr "الهوية الوطنية السعودية"
 
 #: model:ir.model.fields,help:ff_saudi_partner_identity.field_res_partner__sa_national_id
 #. module: ff_saudi_partner_identity
-msgid "Optional 10-digit Saudi national ID or residency ID."
-msgstr "رقم اختياري مكوّن من 10 أرقام للهوية الوطنية أو الإقامة السعودية."
-
-#: code:addons/ff_saudi_partner_identity/models/res_partner.py:0
-#. module: ff_saudi_partner_identity
-msgid "Saudi National ID must contain exactly 10 digits and start with 1 or 2."
-msgstr "يجب أن تتكون الهوية الوطنية السعودية من 10 أرقام بالضبط وأن تبدأ بالرقم 1 أو 2."
+msgid "Optional national ID, residency ID, commercial registration, or other identity reference."
+msgstr "رقم اختياري للهوية الوطنية أو الإقامة أو السجل التجاري أو أي مرجع تعريفي آخر."
 
 #: code:addons/ff_saudi_partner_identity/views/res_partner_views.xml:0
 #: model_terms:ir.ui.view,arch_db:ff_saudi_partner_identity.view_partner_form_saudi_national_id

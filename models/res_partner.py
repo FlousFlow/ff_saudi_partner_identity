@@ -1,7 +1,4 @@
-import re
-
-from odoo import _, api, fields, models
-from odoo.exceptions import ValidationError
+from odoo import api, fields, models
 
 
 class ResPartner(models.Model):
@@ -9,24 +6,10 @@ class ResPartner(models.Model):
 
     sa_national_id = fields.Char(
         string="Saudi National ID",
-        help="Optional 10-digit Saudi national ID or residency ID.",
+        help="Optional national ID, residency ID, commercial registration, or other identity reference.",
         index=True,
         copy=False,
     )
-
-    @api.constrains("sa_national_id")
-    def _check_sa_national_id(self):
-        for partner in self:
-            value = (partner.sa_national_id or "").strip()
-            if not value:
-                continue
-            if not re.fullmatch(r"[12][0-9]{9}", value):
-                raise ValidationError(
-                    _(
-                        "Saudi National ID must contain exactly 10 digits and "
-                        "start with 1 or 2."
-                    )
-                )
 
     @api.model_create_multi
     def create(self, vals_list):

@@ -9,7 +9,7 @@ Adds an optional Saudi national ID field to contacts. When provided, the
 value is validated as a ten-digit Saudi national ID or residency ID beginning
 with 1 or 2.
 """,
-    "version": "20.0.1.0.0",
+    "version": "20.0.1.0.1",
     "category": "Contacts",
     "author": "FlousFlow",
     "maintainer": "FlousFlow",
