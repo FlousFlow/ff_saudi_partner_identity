@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_saudi_national_id" model="ir.ui.view">
+        <field name="name">res.partner.form.saudi.national.id</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='identifiers']" position="after">
+                <field name="sa_national_id" string="Saudi National ID" placeholder="10 digits"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
